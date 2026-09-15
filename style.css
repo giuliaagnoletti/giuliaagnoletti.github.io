@@ -402,11 +402,13 @@ button:focus-visible,
 }
 
 .carousel-slide img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  max-width: 100%;
+  max-height: 400px; /* regola questo valore secondo la dimensione che preferisci */
+  width: auto;
+  height: auto;
+  object-fit: contain;
   display: block;
-  background: var(--bg-raised);
+  margin: 0 auto; /* la centra orizzontalmente */
 }
 
 .carousel-slide figcaption {
