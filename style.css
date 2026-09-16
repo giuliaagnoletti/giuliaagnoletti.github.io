@@ -463,3 +463,14 @@ button:focus-visible,
 }
 
 .dot.active { background: var(--accent); }
+
+.caption-link {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.caption-link:hover,
+.caption-link:focus-visible {
+  color: var(--text);
+}
