@@ -365,18 +365,20 @@ button:focus-visible,
   .nav { display: none; }
   .nav-toggle { display: flex; }
 
-  .page.nav-open .nav {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 76px;
-    left: 0;
-    right: 0;
-    background: var(--bg-raised);
-    padding: 20px 28px;
-    gap: 18px;
-    border-bottom: 1px solid var(--line);
-  }
+ .page.nav-open .nav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 76px;
+  left: 0;
+  right: 0;
+  background: var(--bg-raised);
+  padding: 20px 28px;
+  gap: 18px;
+  border-bottom: 1px solid var(--line);
+  z-index: 100;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+}
 
   .skills { grid-template-columns: 1fr; }
   .skills li:nth-child(odd) { padding-right: 0; }
