@@ -470,6 +470,20 @@ button:focus-visible,
   text-underline-offset: 2px;
 }
 
+.nav-cv {
+  border: 1px solid var(--accent);
+  border-radius: 20px;
+  padding: 6px 16px;
+  color: var(--accent) !important;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.nav-cv:hover,
+.nav-cv:focus-visible {
+  background: var(--accent);
+  color: var(--bg) !important;
+}
+
 .caption-link:hover,
 .caption-link:focus-visible {
   color: var(--text);
